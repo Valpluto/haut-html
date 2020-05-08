@@ -50,7 +50,7 @@ typedef struct {
 /* We also add some rudimentary Unicode support. Therefore we must ensure that
  * char16_t and char32_t are properly defined. C11 does this for us, 
  * otherwise we define them here 
-/
+
 
 #if __STDC_VERSION__ < 201112L
 #include <inttypes.h>
@@ -60,6 +60,7 @@ typedef uint16_t char16_t;
 #include <uchar.h>
 #endif
 */
+
 void strbuffer_init( strbuffer_t* d );
 
 void strbuffer_free( strbuffer_t* d );
